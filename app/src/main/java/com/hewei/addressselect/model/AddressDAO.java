@@ -17,6 +17,9 @@ public interface AddressDAO {
     long[] addNode(List<AddressNode> nodes);
 
     @Insert
+    long[] addAll(AddressNode... nodes);
+
+    @Insert
     long addNode(AddressNode node);
 
     @Query("select * from address_nodes where parentId = :parentId")

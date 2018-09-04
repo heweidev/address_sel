@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        AddressPresenter.initAddressDb(getApplicationContext());
+        AddressLoader.initAddressDb(getApplicationContext());
     }
 
     @Override

@@ -20,7 +20,8 @@ public abstract class AppDataBase extends RoomDatabase {
             throw new IllegalStateException("init only once!");
         }
 
-        sInst = Room.databaseBuilder(context, AppDataBase.class, "address").build();
+        sInst = Room.databaseBuilder(context, AppDataBase.class, "address")
+                .build();
     }
 
     public static AppDataBase getInstance() {

@@ -3,6 +3,7 @@ package com.hewei.addressselect;
 import android.app.Application;
 
 import com.facebook.stetho.Stetho;
+import com.hewei.addressselect.model.AppDataBase;
 
 /**
  * Created by fengyinpeng on 2018/9/3.
@@ -14,5 +15,6 @@ public class MyApplication extends Application {
         super.onCreate();
 
         Stetho.initializeWithDefaults(this);
+        AppDataBase.init(this);
     }
 }
